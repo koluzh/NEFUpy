@@ -1,0 +1,17 @@
+<DVD>:
+    size: 300, 150
+    canvas:
+        Ellipse:
+            pos: self.pos
+            size: self.size
+    Label:
+        pos: (root.x, root.y)
+        size: min(self.size)*0.2, min(self.size)*0.2
+        text: "DVD VIDEO"
+
+<DVDBounce>:
+    dvd: DVD
+
+    DVD:
+        id: DVD
+        center: self.parent.center
